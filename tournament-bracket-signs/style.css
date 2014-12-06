@@ -1,0 +1,43 @@
+html {
+  margin: auto;
+  width: 21cm;
+}
+
+section {
+  clear: both;
+  margin: 3cm 0;
+  height: 4cm;
+  background: #71a634;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  page-break-inside: avoid;
+}
+
+section:nth-child(4n) {
+  page-break-after: always;
+}
+
+section:before {
+  content: ' ';
+  height: 9cm;
+  width: 6.5cm;
+  position: relative;
+  top: -1.25cm;
+  left: 0;
+  background: url('../assets/img/monkey_revised.png') no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+}
+
+h1 {
+  margin-left: 6cm;
+  color: white;
+  font-family: 'TF2 Build';
+  font-weight: 300;
+  font-size: 1.6cm;
+  padding-top: 0.2cm;
+}
