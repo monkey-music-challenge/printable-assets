@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Large Team Signs</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+{{#each teams}}
+<section>
+  <h1{{#if hasShortName}} class="short"{{/if}}{{#if hasLongName}} class="long"{{/if}}>{{teamName}}</h1>
+
+  {{#each contestants}}
+  <h2>{{name}}</h2>
+  {{/each}}
+</section>
+
+{{/each}}
+</body>
+</html>

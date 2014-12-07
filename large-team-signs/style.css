@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 29.7cm;
+  margin: auto;
+  font-family: 'TF2 Build';
+  text-align: center;
+}
+
+section {
+  height: 20cm;
+  border-top: 4cm solid white;
+  border-left: 3cm solid white;
+  background: #71a634;
+  color: white;
+  page-break-inside: avoid;
+  page-break-after: always;
+  position: relative;
+}
+
+section:before {
+  content: ' ';
+  position: absolute;
+  top: -3.1cm;
+  left: -0.5cm;
+  height: 13cm;
+  width: 13cm;
+  background: url('../assets/img/monkey_revised.png') no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5cm;
+  padding-top: 0.5cm;
+  margin-left: 12cm;
+  margin-bottom: 1.5cm;
+  margin-right: 1cm;
+}
+
+.short {
+  font-size: 3.5cm;
+}
+
+.long {
+  font-size: 2.25cm;
+}
+
+h2 {
+  position: absolute;
+  left: 0;
+  top: 8cm;
+  font-size: 1.25cm;
+  width: 50%;
+  padding: 2cm 3cm;
+}
+
+h2:last-child {
+  right: 0;
+  left: auto;
+}
